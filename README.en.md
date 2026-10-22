@@ -33,6 +33,19 @@ These are **v1.3.16 demonstration images with fixed sample data**. Details may d
 
 </details>
 
+## Where should it run?
+
+**You can run it directly on your Mac or inside a macOS virtual machine. A virtual machine is recommended.**
+
+| Setup | Deployment | Best for |
+|---|---|---|
+| macOS virtual machine (recommended) | Install Little Sailboat, the proxy client, browser and required Claude tools inside the same VM | Keeping this environment separate from everyday work and limiting the impact of language, time zone and network changes on your main system |
+| Main Mac system (host) | Install directly on your everyday Mac, with the proxy and clients running in that system | Using your existing desktop environment while managing system-setting changes yourself |
+
+Configure and check the network **inside the VM**. A working host proxy does not mean the guest's proxy, TUN or system proxy is configured. A VM separates environments; it does not automatically provide anonymity, service eligibility or complete network isolation.
+
+Both setups require an **Apple Silicon / arm64 macOS environment** for this release. The package does not support Windows/Linux guests or Intel Macs. Specific virtualization-software and macOS combinations still need verification.
+
 ## Requirements
 
 | Item | Requirement |

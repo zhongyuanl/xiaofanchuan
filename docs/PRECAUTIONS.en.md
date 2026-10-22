@@ -12,6 +12,8 @@ Strong claims in older logs or bundled help about instant bans, permanent paymen
 
 The app uses local proxy controls and periodic checks. Directly launched apps, traffic outside the proxy, IPv6, DNS/WebRTC, network changes and crashes need independent verification. Do not depend on this release for high-assurance network isolation.
 
+On the host, settings changes affect the host system. Inside a macOS VM, they affect the guest system. Keeping the tools in a VM is recommended, but a VM does not replace network checks or eliminate data-deletion risks.
+
 ## Settings and data affected
 
 | Action | Possible effects |

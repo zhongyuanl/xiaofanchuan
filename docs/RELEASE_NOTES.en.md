@@ -13,6 +13,10 @@ Released 2026-10-22. This distribution offers the same Apple Silicon macOS app a
 
 These notes reflect current source and local version records; not every user path has been retested end to end. Historical account-policy claims are not presented as verified results.
 
+## Runtime environment
+
+Run directly on your main Mac or inside a macOS VM. **A VM is recommended** to reduce the impact on everyday language, time zone and network settings. Install the app, proxy, browser and Claude tools in the same VM and check ports and networking inside it; host proxy status is not a substitute. Both setups require Apple Silicon / arm64 macOS, not Windows/Linux guests or Intel Macs. Specific virtualization/system combinations are not fully tested. A VM does not automatically provide anonymity or service eligibility.
+
 ## Installation
 
 Use an Apple Silicon Mac. The app declares macOS 13 or later; compatibility across all versions has not been verified. Download one of the three app assets, extract or open it and move the app to Applications. APP bundles are directories, hence the tar.gz packaging. Install your own proxy client, browser and Claude tools as needed, then follow the [user guide](USER_GUIDE.en.md).

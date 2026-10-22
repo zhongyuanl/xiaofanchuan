@@ -2,6 +2,15 @@
 
 **[简体中文](使用指南.md) | [English](USER_GUIDE.en.md)**
 
+## Runtime location: a macOS VM is recommended
+
+Two setups are possible:
+
+- **macOS virtual machine (recommended):** install Little Sailboat, the proxy client, Edge/Chrome and the required Claude tools in the same VM. Perform configuration inside the VM. This reduces the impact of language, time zone and network changes on your everyday system.
+- **Main Mac system (host):** install directly on your everyday Mac, with the proxy and clients running there. Back up and record system settings first.
+
+A working host proxy does not mean the guest is configured. Check ports, TUN, system proxy and the actual exit inside the VM. This package requires Apple Silicon / arm64 macOS; Windows/Linux guests and Intel Macs are unsupported. Not every virtualization-software/system combination has been tested. A VM alone does not provide anonymity or service eligibility.
+
 ## 1. Before installing
 
 - Use an Apple Silicon Mac. The app declares macOS 13 or later, but not every system version has been tested.
