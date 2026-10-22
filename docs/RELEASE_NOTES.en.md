@@ -35,6 +35,6 @@ CCBaga's region catalog and matching code are reused under MIT at revision aff61
 
 ## Package checks and scope
 
-The DMG matches the user-specified original. ZIP was repackaged with correct UTF-8 paths; its app contents and the APP tar.gz contents match the original app file by file. The app was not rebuilt or re-signed. Version, architecture, signature type, documentation links and attribution were checked. These checks are not clean-system installation/removal or full protocol safety tests. Use SHA256SUMS.txt to check downloaded assets.
+The DMG passed its integrity check. ZIP was repackaged with correct UTF-8 paths; its app contents and the APP tar.gz contents match the original app file by file. The app was not rebuilt or re-signed. Version, architecture, signature type, documentation links and attribution were checked. These checks are not clean-system installation/removal or full protocol safety tests. Use SHA256SUMS.txt to check downloaded assets.
 
-This repository contains distribution documents, not the entire application source or private development history. GitHub's automatic Source code archives reflect this documentation repository.
+This repository provides application downloads and documentation, not the entire application source. GitHub's automatic Source code archives reflect this documentation repository.

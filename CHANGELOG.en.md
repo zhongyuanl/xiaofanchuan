@@ -15,7 +15,7 @@
 
 - DMG, ZIP and APP tar.gz formats for the same arm64 app. ZIP repackaged to preserve UTF-8 paths.
 - Installation, usage, recovery/removal, privacy, known limitations, issue templates and third-party notices. Chinese and English documentation with language links.
-- DMG matches the user-specified file; the app was not rebuilt or re-signed.
+- DMG remains unchanged; the app was not rebuilt or re-signed.
 
 ### Known limitations
 
