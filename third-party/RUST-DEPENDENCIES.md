@@ -1,4 +1,4 @@
-# Rust 依赖清单
+# Rust 依赖清单 / Rust dependencies
 
 依据发布整理时本地 Cargo.lock 与对应 crates 缓存。包含运行时和构建期依赖；不是安装包逐字节可复现构建证明。Swift 主程序只使用系统框架。
 
@@ -15,3 +15,5 @@
 | syn | 2.0.117 | MIT OR Apache-2.0 | https://github.com/dtolnay/syn |
 | unicode-ident | 1.0.24 | (MIT OR Apache-2.0) AND Unicode-3.0 | https://github.com/dtolnay/unicode-ident |
 | zmij | 1.0.21 | MIT | https://github.com/dtolnay/zmij |
+
+Inventory based on local Cargo.lock and cached crate manifests, including runtime and build-time dependencies. It is not a reproducible-build attestation for the historical binary. Full license texts are in ../THIRD_PARTY_NOTICES.txt.

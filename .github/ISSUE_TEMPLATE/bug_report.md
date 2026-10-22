@@ -1,6 +1,6 @@
 ---
-name: 问题反馈
-about: 报告可复现的问题
+name: 问题反馈 / Bug report
+about: 报告可复现的问题 / Report a reproducible bug
 title: "[问题] "
 ---
 
@@ -18,3 +18,7 @@ title: "[问题] "
 
 ## 脱敏截图或错误
 请移除真实 IP、路径中的用户名、账号、API Key、Token 和订阅链接。不要上传完整配置或浏览器资料。
+
+---
+
+English: include app version/build, macOS/chip, package format, proxy/browser versions if relevant, reproduction steps, expected/actual behavior and a redacted error or screenshot. Never share credentials, subscription URLs, real IPs or complete profiles.

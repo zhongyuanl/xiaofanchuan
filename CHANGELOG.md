@@ -1,5 +1,7 @@
 # 更新记录
 
+**[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
+
 ## v1.3.19 · 2026-10-22 · Build 149
 
 ### 修复与调整
