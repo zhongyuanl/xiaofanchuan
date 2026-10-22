@@ -62,9 +62,9 @@
 
 | 下载文件 | 安装方法 |
 |---|---|
-| `小帆船-v1.3.19-macOS.dmg` | 打开镜像，将 APP 拖入“应用程序”，然后推出镜像 |
-| `小帆船-v1.3.19-macOS.zip` | 解压后，将 APP 拖入“应用程序” |
-| `小帆船-v1.3.19-app.tar.gz` | 解压获得完整 APP 文件夹，再拖入“应用程序” |
+| `Little-Sailboat-v1.3.19-macOS.dmg` | 打开镜像，将 APP 拖入“应用程序”，然后推出镜像 |
+| `Little-Sailboat-v1.3.19-macOS.zip` | 解压后，将 APP 拖入“应用程序” |
+| `Little-Sailboat-v1.3.19-app.tar.gz` | 解压获得完整 APP 文件夹，再拖入“应用程序” |
 
 macOS 的 `.app` 本质上是文件夹，第三种因此以 tar.gz 封装。GitHub 自动提供的 **Source code** 文件是本仓库的文档快照，不是安装包，也不是完整应用源码。
 

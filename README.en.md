@@ -62,9 +62,9 @@ Open [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19)
 
 | File | Installation |
 |---|---|
-| `小帆船-v1.3.19-macOS.dmg` | Open the image, drag the app to Applications, then eject the image |
-| `小帆船-v1.3.19-macOS.zip` | Extract and drag the app to Applications |
-| `小帆船-v1.3.19-app.tar.gz` | Extract the complete app bundle and drag it to Applications |
+| `Little-Sailboat-v1.3.19-macOS.dmg` | Open the image, drag the app to Applications, then eject the image |
+| `Little-Sailboat-v1.3.19-macOS.zip` | Extract and drag the app to Applications |
+| `Little-Sailboat-v1.3.19-app.tar.gz` | Extract the complete app bundle and drag it to Applications |
 
 A macOS `.app` is a directory, so the third option is packaged as tar.gz. GitHub's automatic **Source code** archives contain this distribution repository's documents, not an installer or the complete application source.
 
