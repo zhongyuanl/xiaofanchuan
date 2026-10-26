@@ -4,9 +4,9 @@
 
 让 Claude 的使用环境看得清、启动更方便。
 
-小帆船是一款 macOS 原生的 Claude 使用环境管理工具。你可以在一个窗口中查看代理出口和连接状态，检查地区、语言与时区设置，并启动 Claude 客户端、独立浏览器或命令行。
+小帆船是一款支持 macOS 和 Windows 的 Claude 使用环境管理工具，集成代理出口检测、受控连接开关、独立浏览器与多端启动，让环境状态一目了然，连接管理更省心。macOS 版采用原生界面，Windows 版提供独立桌面应用；具体功能与系统要求请按平台查看。
 
-![Version](https://img.shields.io/badge/version-1.3.19-blue) ![macOS](https://img.shields.io/badge/macOS-13%2B-lightgrey) ![Architecture](https://img.shields.io/badge/Apple_Silicon-arm64-blue)
+![Version](https://img.shields.io/badge/version-1.3.19-blue) ![macOS](https://img.shields.io/badge/macOS-13%2B-lightgrey) ![Architecture](https://img.shields.io/badge/Apple_Silicon-arm64-blue) ![Windows](https://img.shields.io/badge/Windows-x64-blue)
 
 **[下载 v1.3.19](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19)** · [使用指南](docs/使用指南.md) · [常见问题](docs/使用指南.md#7-常见问题) · [反馈问题](https://github.com/zhongyuanl/xiaofanchuan/issues)
 
@@ -22,7 +22,7 @@
 
 ## 界面预览
 
-以下为 **v1.3.16 的界面演示图**，使用固定示例数据；v1.3.19 的细节以实际应用为准。图片用于展示布局，其中的状态和分数不代表实际网络检查结果。
+以下为 **macOS v1.3.16 的界面演示图**，使用固定示例数据；v1.3.19 的细节以实际应用为准。图片用于展示布局，其中的状态和分数不代表实际网络检查结果。
 
 ![通行界面演示](docs/images/passage.png)
 
@@ -35,7 +35,7 @@
 
 ## 运行在哪里？
 
-**可以直接在 Mac 主系统上使用，也可以在 macOS 虚拟机中使用，推荐虚拟机。**
+**提供 macOS（Apple Silicon）和 Windows x64 两个平台版本，可在对应的实体系统或虚拟机中使用。** 下表是 macOS 版的部署方式；Windows 版安装说明见下方。
 
 | 方式 | 怎么部署 | 适合情况 |
 |---|---|---|
@@ -44,33 +44,39 @@
 
 使用虚拟机时，请在虚拟机内设置、检查代理和网络。**宿主机代理已开启，不代表虚拟机内的代理、TUN 或系统代理已配置完成。** 虚拟机是环境分开的方式，不会自动带来匿名、账号资格或完整的网络隔离保证。
 
-本次两种方式均要求 **Apple Silicon / arm64 macOS 环境**；Windows、Linux 虚拟机及 Intel Mac 不适用此安装包。具体虚拟化软件与系统版本组合仍需自行验证。
+macOS 安装包要求 **Apple Silicon / arm64 macOS 环境**，不能用于 Windows、Linux 或 Intel Mac。Windows 请下载独立的 **Windows x64** 版本；尚未提供原生 ARM64 或 Linux 构建，Windows 10 与具体虚拟化软件组合仍需验证。
 
 ## 系统要求
 
 | 项目 | 要求 |
 |---|---|
 | Mac | Apple 芯片（Apple Silicon / arm64），本次不提供 Intel 版 |
-| 系统 | 应用声明最低 macOS 13.0；尚未完成全部系统版本的兼容性测试 |
+| macOS 系统 | 应用声明最低 macOS 13.0；尚未完成全部系统版本的兼容性测试 |
+| Windows | x64 桌面应用，已有 Windows 11 虚拟机运行记录；Windows 10 尚未验证，未提供原生 ARM64 构建 |
+| Windows 界面运行库 | Microsoft Edge WebView2 Runtime；EXE 已内含 WebView2Loader |
 | 代理 | 自行安装并配置代理客户端，当前主要适配 Clash 系工具 |
 | 浏览器 | 使用独立浏览器功能需安装 Microsoft Edge 或 Google Chrome |
 | Claude / Claude Code | 按需从官方渠道安装，不随小帆船提供 |
 
 ## 下载与安装
 
-进入 [Releases 下载页](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19)，展开 **Assets**。三种格式包含同一个应用，**任选一种即可，推荐 DMG**。
+进入 [Releases 下载页](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19)，展开 **Assets**。按操作系统选择附件：**macOS 推荐 DMG，Windows 推荐单文件 EXE**。macOS 的三种格式包含同一个应用。
 
 | 下载文件 | 安装方法 |
 |---|---|
 | `Little-Sailboat-v1.3.19-macOS.dmg` | 打开镜像，将 APP 拖入“应用程序”，然后推出镜像 |
 | `Little-Sailboat-v1.3.19-macOS.zip` | 解压后，将 APP 拖入“应用程序” |
 | `Little-Sailboat-v1.3.19-app.tar.gz` | 解压获得完整 APP 文件夹，再拖入“应用程序” |
+| `Little-Sailboat-v1.3.19-Windows-x64.exe` | Windows 单文件版，下载后双击启动 |
+| `Little-Sailboat-v1.3.19-Windows-x64.zip` | 内含同一 EXE 和中文说明，解压后双击 EXE |
 
 macOS 的 `.app` 本质上是文件夹，第三种因此以 tar.gz 封装。GitHub 自动提供的 **Source code** 文件是本仓库的文档快照，不是安装包，也不是完整应用源码。
 
 附件还包括使用说明与许可、`THIRD_PARTY_NOTICES.txt` 和 `SHA256SUMS.txt`。请保留第三方许可；需要时可用校验清单核对下载文件。
 
-**首次打开提示：** 本版仅有本地临时签名，尚未通过 Apple 公证，系统可能拦截。请先确认下载来源和校验值，再按系统“隐私与安全性”的正常提示处理。不要关闭 Gatekeeper、SIP 等安全保护；遇到恶意软件、损坏或签名异常提示时，先停止安装并反馈。
+Windows 首次运行会将核心程序与加载库解压至 `%LOCALAPPDATA%\ClaudeGuard\app`。系统仍需安装 WebView2 Runtime；缺少时请从[微软官网](https://developer.microsoft.com/microsoft-edge/webview2/)安装。Windows 校验文件为 `SHA256SUMS-Windows.txt`。
+
+**macOS 首次打开提示：** 本版仅有本地临时签名，尚未通过 Apple 公证，系统可能拦截。请先确认下载来源和校验值，再按系统“隐私与安全性”的正常提示处理。不要关闭 Gatekeeper、SIP 等安全保护；遇到恶意软件、损坏或签名异常提示时，先停止安装并反馈。
 
 ## 快速开始
 
@@ -85,7 +91,7 @@ macOS 的 `.app` 本质上是文件夹，第三种因此以 tar.gz 封装。GitH
 
 ## 使用前请留意
 
-- **系统设置会受到影响。** “一键配置”等可选操作可能更改语言、时区、IPv6 和 Claude Code 设置。时区快捷配置还可能建立持续有效的管理员免密规则，使用前应了解权限影响。
+- **系统设置会受到影响。** “一键配置”等可选操作可能更改语言、时区、IPv6 和 Claude Code 设置。macOS 时区快捷配置还可能建立持续有效的管理员免密规则，使用前应了解权限影响。
 - **清理操作可能丢失数据。** 浏览器重建和“封号善后”可能删除登录凭据、会话或本地资料，不是普通网络排障步骤。
 - **保护范围有限。** 只有实际经过小帆船本地代理的连接才受该开关控制。代理已开启或 IP 检查通过，不代表所有软件、DNS、IPv6 和 WebRTC 均已隔离。
 - **IP 分数仅供参考。** 第三方数据可能不准确，不能判断账号资格或代替官方政策。网络检查会访问第三方服务，部分原始出口查询可能直连或使用明文 HTTP。
@@ -94,7 +100,7 @@ macOS 的 `.app` 本质上是文件夹，第三种因此以 tar.gz 封装。GitH
 
 ## 已知限制与更新
 
-当前版本为 **v1.3.19 / Build 149**，仅适用于 Apple 芯片。尚未完成干净系统安装、卸载及全部网络协议的完整验收。
+当前提供 **macOS v1.3.19 / Build 149（Apple Silicon）** 与 **Windows v1.3.19（x64）**。Windows 使用 Tao + Wry / WebView2 桌面外壳，不是 SwiftUI 原生界面的直接转换；两版功能及系统操作尚不能视为完全一致。Windows 发布包已核对文件与 SHA-256，本次未重新完成全功能验收；两平台均未完成全部系统与网络协议的完整验收。
 
 应用内的反馈按钮仍使用旧地址，请通过[本仓库 Issues](https://github.com/zhongyuanl/xiaofanchuan/issues)反馈。“检查更新”目前显示内置版本信息，下载新版本请以 Releases 为准。
 

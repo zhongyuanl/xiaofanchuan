@@ -4,9 +4,9 @@
 
 A clearer view of your Claude environment, with convenient launch controls.
 
-Little Sailboat is a native macOS app for managing your Claude environment. View proxy connections and exit IP information, check region, language and time zone settings, and launch Claude clients, a separate browser profile or a terminal from one window.
+Little Sailboat is a Claude environment management tool for macOS and Windows, combining proxy exit checks, controlled connection switches, a separate browser profile and client launch controls. The macOS edition uses a native interface; the Windows edition is a standalone desktop app. Features and requirements vary by platform.
 
-![Version](https://img.shields.io/badge/version-1.3.19-blue) ![macOS](https://img.shields.io/badge/macOS-13%2B-lightgrey) ![Architecture](https://img.shields.io/badge/Apple_Silicon-arm64-blue)
+![Version](https://img.shields.io/badge/version-1.3.19-blue) ![macOS](https://img.shields.io/badge/macOS-13%2B-lightgrey) ![Architecture](https://img.shields.io/badge/Apple_Silicon-arm64-blue) ![Windows](https://img.shields.io/badge/Windows-x64-blue)
 
 **[Download v1.3.19](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19)** · [User guide](docs/USER_GUIDE.en.md) · [Report an issue](https://github.com/zhongyuanl/xiaofanchuan/issues)
 
@@ -18,11 +18,11 @@ Little Sailboat is a native macOS app for managing your Claude environment. View
 - **Environment checks:** inspect and optionally change region, language, time zone and IPv6 settings.
 - **Settings snapshots:** save a copy before changing Claude Code settings, for comparison and recovery.
 
-The app does not provide proxy servers, subscriptions or accounts. It cannot guarantee protection against account restrictions, restore banned accounts or control every connection on your Mac. Follow applicable laws and the terms of the services you use.
+The app does not provide proxy servers, subscriptions or accounts. It cannot guarantee protection against account restrictions, restore banned accounts or control every connection on your computer. Follow applicable laws and the terms of the services you use.
 
 ## Interface preview
 
-These are **v1.3.16 demonstration images with fixed sample data**. Details may differ in v1.3.19. Status labels and scores in the images are illustrations, not evidence of current network protection.
+These are **macOS v1.3.16 demonstration images with fixed sample data**. Details may differ in v1.3.19. Status labels and scores in the images are illustrations, not evidence of current network protection.
 
 ![Connection screen demonstration](docs/images/passage.png)
 
@@ -35,7 +35,7 @@ These are **v1.3.16 demonstration images with fixed sample data**. Details may d
 
 ## Where should it run?
 
-**You can run it directly on your Mac or inside a macOS virtual machine. A virtual machine is recommended.**
+**Editions are available for macOS (Apple Silicon) and Windows x64, on a physical system or a corresponding VM.** The table below covers macOS deployment; Windows installation is described below.
 
 | Setup | Deployment | Best for |
 |---|---|---|
@@ -44,7 +44,7 @@ These are **v1.3.16 demonstration images with fixed sample data**. Details may d
 
 Configure and check the network **inside the VM**. A working host proxy does not mean the guest's proxy, TUN or system proxy is configured. A VM separates environments; it does not automatically provide anonymity, service eligibility or complete network isolation.
 
-Both setups require an **Apple Silicon / arm64 macOS environment** for this release. The package does not support Windows/Linux guests or Intel Macs. Specific virtualization-software and macOS combinations still need verification.
+The macOS package requires **Apple Silicon / arm64 macOS** and cannot run on Windows, Linux or Intel Macs. Download the separate **Windows x64** edition for Windows. No native ARM64 Windows or Linux build is provided; Windows 10 and specific virtualization combinations remain unverified.
 
 ## Requirements
 
@@ -52,25 +52,31 @@ Both setups require an **Apple Silicon / arm64 macOS environment** for this rele
 |---|---|
 | Mac | Apple Silicon / arm64; no Intel build in this release |
 | macOS | The app declares macOS 13.0 or later; compatibility across all versions has not been tested |
+| Windows | x64 desktop app with Windows 11 VM run records; Windows 10 remains unverified and no native ARM64 build is provided |
+| Windows runtime | Microsoft Edge WebView2 Runtime; WebView2Loader is included in the EXE |
 | Proxy | Install and configure your own proxy client; current integration mainly targets Clash-based tools |
 | Browser | Microsoft Edge or Google Chrome for the separate-profile browser feature |
 | Claude / Claude Code | Install from official sources as needed; neither is bundled |
 
 ## Download and install
 
-Open [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19) and expand **Assets**. All three formats contain the same app. **Choose one; DMG is recommended.**
+Open [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19) and expand **Assets**. Choose your platform: **DMG is recommended for macOS; the standalone EXE is recommended for Windows.** The three macOS formats contain the same app.
 
 | File | Installation |
 |---|---|
 | `Little-Sailboat-v1.3.19-macOS.dmg` | Open the image, drag the app to Applications, then eject the image |
 | `Little-Sailboat-v1.3.19-macOS.zip` | Extract and drag the app to Applications |
 | `Little-Sailboat-v1.3.19-app.tar.gz` | Extract the complete app bundle and drag it to Applications |
+| `Little-Sailboat-v1.3.19-Windows-x64.exe` | Download and double-click on Windows |
+| `Little-Sailboat-v1.3.19-Windows-x64.zip` | Extract the same EXE and Chinese instructions, then double-click the EXE |
 
 A macOS `.app` is a directory, so the third option is packaged as tar.gz. GitHub's automatic **Source code** archives contain this distribution repository's documents, not an installer or the complete application source.
 
 Additional assets include the guides and licenses, `THIRD_PARTY_NOTICES.txt` and `SHA256SUMS.txt`. Retain the third-party notices and use the checksums to verify downloads when needed.
 
-**First launch:** this build has only an ad-hoc local signature and is not notarized by Apple. macOS may block it. Verify the source and checksum before following the normal Privacy & Security prompts. Do not disable Gatekeeper, SIP or other system protections. Stop installation and report the issue if macOS reports malware, corruption or a signature problem.
+On Windows, the launcher extracts the core and loader to `%LOCALAPPDATA%\ClaudeGuard\app`. Microsoft Edge WebView2 Runtime is still required; install it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/) if missing. Windows checksums are in `SHA256SUMS-Windows.txt`.
+
+**macOS first launch:** this build has only an ad-hoc local signature and is not notarized by Apple. macOS may block it. Verify the source and checksum before following the normal Privacy & Security prompts. Do not disable Gatekeeper, SIP or other system protections. Stop installation and report the issue if macOS reports malware, corruption or a signature problem.
 
 ## Quick start
 
@@ -85,7 +91,7 @@ See the [user guide](docs/USER_GUIDE.en.md) for detailed steps, recovery and rem
 
 ## Before you use it
 
-- **Optional actions change system settings.** Presets may change language, time zone, IPv6 and Claude Code settings. The time zone shortcut may also create persistent passwordless administrator command rules; understand the permission implications first.
+- **Optional actions change system settings.** Presets may change language, time zone, IPv6 and Claude Code settings. The macOS time zone shortcut may also create persistent passwordless administrator command rules; understand the permission implications first.
 - **Cleanup can delete data.** Rebuilding a browser profile or using post-restriction cleanup may remove credentials, sessions and local data. These are not ordinary network troubleshooting steps.
 - **Connection control has limits.** Only traffic passing through the local proxy is controlled by its switch. A working proxy or successful IP check does not prove isolation of every app, DNS, IPv6 or WebRTC.
 - **IP scores are estimates.** Third-party data can be wrong and cannot determine account eligibility or replace official policy. Checks contact external services; some original-exit lookups may connect directly or use unencrypted HTTP.
@@ -94,7 +100,7 @@ Read [precautions and privacy](docs/PRECAUTIONS.en.md) for modification scope, p
 
 ## Known limitations and updates
 
-The current release is **v1.3.19 / Build 149**, for Apple Silicon only. Clean-system installation and removal, and coverage of all network protocols, have not been fully tested.
+Available editions are **macOS v1.3.19 / Build 149 (Apple Silicon)** and **Windows v1.3.19 (x64)**. Windows uses Tao + Wry / WebView2, rather than a direct SwiftUI conversion. Full feature and system-operation parity has not been established. Windows assets and SHA-256 were verified during packaging; full functional acceptance was not repeated. Full system and network-protocol coverage remains unverified on both platforms.
 
 The in-app feedback button still points to an old address. Use [this repository's Issues](https://github.com/zhongyuanl/xiaofanchuan/issues). “Check for updates” currently displays bundled version information; use Releases for downloads.
 

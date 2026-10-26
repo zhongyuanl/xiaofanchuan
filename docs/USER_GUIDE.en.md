@@ -2,6 +2,14 @@
 
 **[简体中文](使用指南.md) | [English](USER_GUIDE.en.md)**
 
+## Windows x64 usage and scope
+
+Download `Little-Sailboat-v1.3.19-Windows-x64.exe` from [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19), or extract the matching ZIP, then double-click the EXE. The launcher includes the core and WebView2Loader and extracts them to `%LOCALAPPDATA%\ClaudeGuard\app`. Microsoft Edge WebView2 Runtime is still required; obtain it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/) if missing.
+
+The target is Windows x64, with Windows 11 VM run records. Windows 10 and native ARM64 builds remain unverified. Configure the proxy, browser and clients inside the same Windows system. Only connections through `127.0.0.1:17897` are controlled; there is no system-wide Windows outbound block. Full platform parity has not been established. Applications-folder, Apple-signature, sudoers and Mac removal procedures below apply only to macOS.
+
+Use `SHA256SUMS-Windows.txt` for Windows downloads. Packaging and file checks were completed; full functional acceptance was not repeated.
+
 ## Runtime location: a macOS VM is recommended
 
 Two setups are possible:
@@ -9,7 +17,7 @@ Two setups are possible:
 - **macOS virtual machine (recommended):** install Little Sailboat, the proxy client, Edge/Chrome and the required Claude tools in the same VM. Perform configuration inside the VM. This reduces the impact of language, time zone and network changes on your everyday system.
 - **Main Mac system (host):** install directly on your everyday Mac, with the proxy and clients running there. Back up and record system settings first.
 
-A working host proxy does not mean the guest is configured. Check ports, TUN, system proxy and the actual exit inside the VM. This package requires Apple Silicon / arm64 macOS; Windows/Linux guests and Intel Macs are unsupported. Not every virtualization-software/system combination has been tested. A VM alone does not provide anonymity or service eligibility.
+A working host proxy does not mean the guest is configured. Check ports, TUN, system proxy and the actual exit inside the VM. The macOS package described in this section requires Apple Silicon / arm64 macOS; it cannot run in Windows/Linux guests or on Intel Macs. Use the separate EXE above for Windows. Not every virtualization-software/system combination has been tested. A VM alone does not provide anonymity or service eligibility.
 
 ## 1. Before installing
 

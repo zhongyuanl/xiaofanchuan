@@ -2,6 +2,12 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.19 Windows x64 · 2026-10-26
+
+- 新增 Windows 单文件 EXE、含中文说明的 ZIP 与独立 SHA-256 校验清单。
+- 内含核心程序与 WebView2Loader；系统仍需 WebView2 Runtime。
+- 同步中英文平台、安装和反馈文档；未宣称两平台完整功能一致或完成全功能验收。
+
 ## v1.3.19 · 2026-10-22 · Build 149
 
 ### 修复与调整

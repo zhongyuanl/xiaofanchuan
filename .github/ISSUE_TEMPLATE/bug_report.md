@@ -6,7 +6,7 @@ title: "[问题] "
 
 ## 环境
 - 小帆船版本 / Build：
-- macOS 版本 / 芯片：
+- 操作系统（macOS / Windows）/ 系统版本 / 芯片架构：
 - 安装格式（DMG / ZIP / APP tar.gz）：
 - 外部代理与浏览器版本（如相关）：
 
@@ -21,4 +21,4 @@ title: "[问题] "
 
 ---
 
-English: include app version/build, macOS/chip, package format, proxy/browser versions if relevant, reproduction steps, expected/actual behavior and a redacted error or screenshot. Never share credentials, subscription URLs, real IPs or complete profiles.
+English: include app version/build, OS (macOS / Windows), version/architecture, package format, proxy/browser versions if relevant, reproduction steps, expected/actual behavior and a redacted error or screenshot. Never share credentials, subscription URLs, real IPs or complete profiles.

@@ -2,6 +2,12 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.19 Windows x64 · 2026-10-26
+
+- Added a standalone Windows EXE, ZIP with Chinese instructions and separate SHA-256 checksums.
+- Core and WebView2Loader included; WebView2 Runtime is still required.
+- Updated platform, installation and feedback documentation in both languages. Full platform parity and functional acceptance are not claimed.
+
 ## v1.3.19 · 2026-10-22 · Build 149
 
 ### Fixes and adjustments

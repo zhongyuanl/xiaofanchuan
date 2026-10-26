@@ -4,6 +4,8 @@
 
 This page covers v1.3.19, based on local source and package inspection. Clean-system installation/removal, all network protocols and every feature have not been fully tested end to end.
 
+Apple signing, sudoers, Mac application paths and macOS system procedures in this document apply only to macOS. Windows x64 uses WebView2 and extracts the core and loader to `%LOCALAPPDATA%\ClaudeGuard\app` on first launch; see the [Windows guide](USER_GUIDE.en.md#windows-x64-usage-and-scope). Both editions control only traffic actually passing through the local proxy.
+
 ## Eligibility and connection control
 
 Little Sailboat is not an official Anthropic product or an account protection service. IP labels, Git email addresses, npm registries, language and device identifiers cannot establish or change a user's service eligibility. Do not use the app to evade service restrictions.

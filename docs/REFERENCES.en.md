@@ -24,7 +24,7 @@ The catalog is general configuration data, not a list of service-eligible countr
 - Earlier local work referenced v1.19.15, not necessarily the user's installed version. [License](https://github.com/MetaCubeX/mihomo/blob/v1.19.15/LICENSE).
 - TUN documentation: https://wiki.metacubex.one/en/config/inbound/tun/
 
-The app uses local proxy ports and some control interfaces. Linux/Windows TUN behavior cannot be assumed on macOS. None of the three app packages bundles Clash or Mihomo binaries. Users obtain those separately under their own licenses. Bundling or modifying GPL components in the future requires a fresh assessment of source and license obligations.
+The app uses local proxy ports and some control interfaces. Linux/Windows TUN behavior cannot be assumed on macOS. Neither the macOS nor Windows app packages bundle Clash or Mihomo binaries. Users obtain those separately under their own licenses. Bundling or modifying GPL components in the future requires a fresh assessment of source and license obligations.
 
 ## 3. Magic UI — visual and motion reference, MIT
 
