@@ -84,7 +84,7 @@
 | **Windows** (10/11) | [`Little-Sailboat-v1.3.19-Windows-x64.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.19/Little-Sailboat-v1.3.19-Windows-x64.zip) | ⭐⭐⭐⭐ | 包含使用说明文档的绿色压缩包 |
 
 > [!TIP]
-> **完整性校验**：所有安装包均提供官方 SHA-256 哈希清单，可在发布页下载 [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.19/SHA256SUMS.txt) 进行核验。
+> **完整性校验**：所有安装包均提供官方 SHA-256 哈希清单，可在发布页下载 [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.19/SHA256SUMS.txt) 与 [`SHA256SUMS-Windows.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.19/SHA256SUMS-Windows.txt) 进行核验。
 
 ---
 
