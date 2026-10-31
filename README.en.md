@@ -56,14 +56,14 @@ When developers interact with **Claude Web/Desktop** and **Claude Code CLI** acr
 ### 1. Dashboard & Passage Control
 Real-time monitoring of exit IP, ISP details, geographic location, and local gateway status with single-click launcher controls.
 
-![Passage Screen Demonstration](docs/images/passage.png)
+![Passage Screen Demonstration](docs/images/passage.png?v=2)
 
 <br/>
 
 ### 2. Environment & Network Settings
 Easily configure upstream proxy ports (e.g., Clash 7897), align regional preferences, and inspect system details.
 
-![Settings Screen Demonstration](docs/images/settings.png)
+![Settings Screen Demonstration](docs/images/settings.png?v=2)
 
 </div>
 

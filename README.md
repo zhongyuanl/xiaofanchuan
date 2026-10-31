@@ -56,14 +56,14 @@
 ### 1. 通行控制中心 (Dashboard)
 实时监测出口 IP、ASN 运营商、地理位置与本地受控水闸状态，支持一键启停护航与多端启动。
 
-![通行界面演示](docs/images/passage.png)
+![通行界面演示](docs/images/passage.png?v=2)
 
 <br/>
 
 ### 2. 环境与网络配置 (Settings)
 轻量配置上游代理端口（如 Clash 7897），对齐地区语言偏好，掌握每一项底层变动。
 
-![设置界面演示](docs/images/settings.png)
+![设置界面演示](docs/images/settings.png?v=2)
 
 </div>
 
