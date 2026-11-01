@@ -4,6 +4,11 @@
 
 ## v1.3.19 Windows & macOS Polish Release · 2026-11-02
 
+### Cross-Platform Features (macOS & Windows)
+- **Selectable & Persistent Default Safe Browser Kernel**:
+  - Added support in both "Settings" and "Browser Environment" to choose and persist the preferred safe browser kernel (Auto Detect, Microsoft Edge, Google Chrome, Brave);
+  - "Launch Safe Browser" directly launches the user-selected browser sandbox and reflects the choice in the launch card badge (e.g. `Not Opened (Edge)` / `Not Opened (Chrome)`).
+
 ### Windows x64 Polish
 - **System Theme & Dark Mode**: Fixed auto-switching for system appearance (Dark / Light mode);
 - **Bilingual i18n Localization**: Refined language switcher and translated remaining interface strings;
