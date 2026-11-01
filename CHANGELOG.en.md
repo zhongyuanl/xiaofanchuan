@@ -2,6 +2,19 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.19 Windows & macOS Polish Release · 2026-11-02
+
+### Windows x64 Polish
+- **System Theme & Dark Mode**: Fixed auto-switching for system appearance (Dark / Light mode);
+- **Bilingual i18n Localization**: Refined language switcher and translated remaining interface strings;
+- **Crisp High-DPI Icons**: Rebuilt taskbar and tray icons with multi-resolution bitmaps to eliminate blurriness;
+- **Typography & Spacing**: Restructured typography proportions, line-heights, and header button clearances;
+- **Compact Environment Layout**: Balanced card padding and gap in the environment & browser test section.
+
+### macOS Experience & Auto-Update Engine
+- **GitHub Releases Auto-Update**: Checks GitHub Releases on launch, surfaces update notifications, and supports automated silent DMG mount and installation;
+- **Native App Build Refresh**: Recompiled and locally signed the latest native arm64 application bundle and DMG image.
+
 ## v1.3.19 Windows x64 · 2026-10-26
 
 - Added a standalone Windows EXE, ZIP with Chinese instructions and separate SHA-256 checksums.

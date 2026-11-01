@@ -2,7 +2,7 @@
 
 **[简体中文](发布说明-v1.3.19.md) | [English](RELEASE_NOTES.en.md)**
 
-The distribution provides macOS Apple Silicon and Windows x64 editions. macOS packages (DMG, ZIP and APP tar.gz) were released on 2026-10-22; Windows standalone EXE and ZIP were added on 2026-10-26. Build 149 and the macOS change list below refer to the macOS edition.
+The distribution provides macOS Apple Silicon and Windows x64 editions. On 2026-11-02, an updated polish build was released for both platforms (macOS adds GitHub Releases auto-update checks and automated installation; Windows brings system appearance switching, dark mode support, bilingual i18n, crisp multi-resolution icons, and refined UI typography). Build 149 and historical change records are preserved below.
 
 ## Windows x64 usage and scope
 
