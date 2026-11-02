@@ -2,7 +2,7 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
-## v1.3.19 Windows & macOS 持续调优版 · 2026-11-02
+## v1.3.20 Windows & macOS 协议中转与外部链接全面接管版 · 2026-11-02
 
 ### 全平台新功能（macOS & Windows 同步）
 - **Claude 协议与外部链接安全中转接管（全面接管）**：

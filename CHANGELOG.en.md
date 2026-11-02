@@ -2,7 +2,7 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
-## v1.3.19 Windows & macOS Polish Release · 2026-11-02
+## v1.3.20 Windows & macOS Protocol Relay & Full Interception Release · 2026-11-02
 
 ### Cross-Platform Features (macOS & Windows)
 - **Claude Protocol & External URL Safety Relay (Full Interception Scheme)**:
