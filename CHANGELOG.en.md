@@ -5,6 +5,10 @@
 ## v1.3.19 Windows & macOS Polish Release · 2026-11-02
 
 ### Cross-Platform Features (macOS & Windows)
+- **Claude Protocol & External URL Safety Relay (Full Interception Scheme)**:
+  - **`claude://` Protocol Relay**: Registered as system-wide `claude://` scheme handler. External OAuth redirects to desktop Claude are safely intercepted; unshielded connections are strictly blocked if Safety Guard is offline to prevent account bans;
+  - **Smart Clipboard Magic Link Sniffer**: Automatically detects Claude login / Magic Links copied from email clients (Outlook, webmail, etc.) and offers 1-click launch inside the safe browser sandbox;
+  - **System-Wide External URL Dispatcher (macOS)**: Can be configured as system default link dispatcher; Claude URLs enter the safe sandbox while ordinary websites are transparently routed to your regular fallback browser (Safari/Chrome/Edge);
 - **Selectable & Persistent Default Safe Browser Kernel**:
   - Added support in both "Settings" and "Browser Environment" to choose and persist the preferred safe browser kernel (Auto Detect, Microsoft Edge, Google Chrome, Brave);
   - "Launch Safe Browser" directly launches the user-selected browser sandbox and reflects the choice in the launch card badge (e.g. `Not Opened (Edge)` / `Not Opened (Chrome)`).
