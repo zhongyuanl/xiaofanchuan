@@ -2,11 +2,11 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
-## v1.3.21 Windows & macOS Host Direct Compliant & Zero-Interruption Release · 2026-11-04
+## v1.3.21 Windows & macOS Compliant Egress & Zero-Interruption Release · 2026-11-04
 
 ### Cross-Platform Features (macOS & Windows)
-- **Host Direct Compliant Smart Recognition & Seamless Passage**:
-  - Automatically identifies and permits direct connections when host machine is located in a Claude-supported region with low-risk residential broadband, eliminating unnecessary proxy blockage.
+- **Direct Compliant Smart Recognition & Seamless Passage**:
+  - Automatically identifies and permits connections when host machine is located in a Claude-supported region with low-risk residential broadband, displaying "Running" without unnecessary proxy blockage.
 - **Anti-Drift Timezone Lock**:
   - Disables background location-based timezone sync services on apply to prevent drifting back to restricted domestic timezones (e.g. Shanghai) during idle periods.
 - **Precision Dual-Platform Observation Matrix**:
