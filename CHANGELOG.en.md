@@ -2,6 +2,22 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.21 Windows & macOS Host Direct Compliant & Zero-Interruption Release · 2026-11-04
+
+### Cross-Platform Features (macOS & Windows)
+- **Host Direct Compliant Smart Recognition & Seamless Passage**:
+  - Automatically identifies and permits direct connections when host machine is located in a Claude-supported region with low-risk residential broadband, eliminating unnecessary proxy blockage.
+- **Anti-Drift Timezone Lock**:
+  - Disables background location-based timezone sync services on apply to prevent drifting back to restricted domestic timezones (e.g. Shanghai) during idle periods.
+- **Precision Dual-Platform Observation Matrix**:
+  - Accurately matches host proxy egress and browser egress IPs without false "Waiting for browser report" alerts or excessive TUN requirements.
+
+### Windows x64 Polish
+- **Native UAC Manifest Elevation**:
+  - Integrated `requireAdministrator` application manifest; application elevates once upon launch, completely eliminating repeated PowerShell UAC elevation prompts during region and timezone sync.
+- **Instant Region Sync Response**:
+  - Refined frontend status polling and state refresh after timezone and region synchronization.
+
 ## v1.3.20 Windows & macOS Protocol Relay & Full Interception Release · 2026-11-02
 
 ### Cross-Platform Features (macOS & Windows)
