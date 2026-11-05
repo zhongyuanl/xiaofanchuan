@@ -9,15 +9,15 @@
   <strong>Navigate your AI development in a transparent, pure, and strictly controlled environment.</strong>
 </p>
 
-[![Version](https://img.shields.io/badge/version-1.3.21-007AFF?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.21)
-[![Platform macOS](https://img.shields.io/badge/macOS-Apple_Silicon_arm64-black?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.21)
-[![Platform Windows](https://img.shields.io/badge/Windows-x64_Portable-0078D6?style=flat-square&logo=windows)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.21)
+[![Version](https://img.shields.io/badge/version-1.3.22-007AFF?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
+[![Platform macOS](https://img.shields.io/badge/macOS-Apple_Silicon_arm64-black?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
+[![Platform Windows](https://img.shields.io/badge/Windows-x64_Portable-0078D6?style=flat-square&logo=windows)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
 [![Core Tech](https://img.shields.io/badge/built_with-Rust_%26_SwiftUI-orange?style=flat-square)](https://github.com/zhongyuanl/xiaofanchuan)
 [![Status](https://img.shields.io/badge/release-Stable-brightgreen?style=flat-square)](https://github.com/zhongyuanl/xiaofanchuan/releases)
 
 **[简体中文](README.md) | [English](README.en.md)**
 
-[**📥 Download v1.3.21**](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.21) · [**📖 User Guide**](docs/USER_GUIDE.en.md) · [**⚠️ Precautions & Privacy**](docs/PRECAUTIONS.en.md) · [**🐛 Report an Issue**](https://github.com/zhongyuanl/xiaofanchuan/issues)
+[**📥 Download v1.3.22**](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22) · [**📖 User Guide**](docs/USER_GUIDE.en.md) · [**⚠️ Precautions & Privacy**](docs/PRECAUTIONS.en.md) · [**🐛 Report an Issue**](https://github.com/zhongyuanl/xiaofanchuan/issues)
 
 </div>
 
@@ -77,14 +77,14 @@ Little Sailboat offers native builds for both **macOS (Apple Silicon)** and **Wi
 
 | Platform | Asset File | Recommendation | Description |
 | :--- | :--- | :--- | :--- |
-| **macOS** (13.0+) | [**`Little-Sailboat-v1.3.21-macOS.dmg`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/Little-Sailboat-v1.3.21-macOS.dmg) | ⭐⭐⭐⭐⭐ **Recommended** | Open DMG and drag `Little Sailboat.app` to Applications |
-| **macOS** (13.0+) | [`Little-Sailboat-v1.3.21-macOS.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/Little-Sailboat-v1.3.21-macOS.zip) | ⭐⭐⭐⭐ | Portable archive |
-| **macOS** (13.0+) | [`Little-Sailboat-v1.3.21-app.tar.gz`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/Little-Sailboat-v1.3.21-app.tar.gz) | ⭐⭐⭐ | Complete App Bundle tarball archive |
-| **Windows** (10/11) | [**`Little-Sailboat-v1.3.21-Windows-x64.exe`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/Little-Sailboat-v1.3.21-Windows-x64.exe) | ⭐⭐⭐⭐⭐ **Recommended** | Standalone single-executable with built-in WebView2 loader |
-| **Windows** (10/11) | [`Little-Sailboat-v1.3.21-Windows-x64.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/Little-Sailboat-v1.3.21-Windows-x64.zip) | ⭐⭐⭐⭐ | Includes documentation and portable executable |
+| **macOS** (13.0+) | [**`Little-Sailboat-v1.3.22-macOS.dmg`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-macOS.dmg) | ⭐⭐⭐⭐⭐ **Recommended** | Open DMG and drag `Little Sailboat.app` to Applications |
+| **macOS** (13.0+) | [`Little-Sailboat-v1.3.22-macOS.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-macOS.zip) | ⭐⭐⭐⭐ | Portable archive |
+| **macOS** (13.0+) | [`Little-Sailboat-v1.3.22-app.tar.gz`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-app.tar.gz) | ⭐⭐⭐ | Complete App Bundle tarball archive |
+| **Windows** (10/11) | [**`Little-Sailboat-v1.3.22-Windows-x64.exe`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-Windows-x64.exe) | ⭐⭐⭐⭐⭐ **Recommended** | Standalone single-executable with built-in WebView2 loader |
+| **Windows** (10/11) | [`Little-Sailboat-v1.3.22-Windows-x64.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-Windows-x64.zip) | ⭐⭐⭐⭐ | Includes documentation and portable executable |
 
 > [!TIP]
-> **Checksum Verification**: Checksum lists are published with each release. Verify downloaded files using [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/SHA256SUMS.txt) and [`SHA256SUMS-Windows.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.21/SHA256SUMS-Windows.txt).
+> **Checksum Verification**: Checksum lists are published with each release. Verify downloaded files using [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/SHA256SUMS.txt) and [`SHA256SUMS-Windows.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/SHA256SUMS-Windows.txt).
 
 ---
 

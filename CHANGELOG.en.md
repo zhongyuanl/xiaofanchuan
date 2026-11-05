@@ -2,6 +2,18 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.22 Windows & macOS Status Normalization & Minimalist UI Release · 2026-11-05
+
+### Cross-Platform Features & Enhancements (macOS & Windows)
+- **Status Label Normalization to "Running"**:
+  - Regardless of whether traffic originates from host direct network or proxy egress, all compliant traffic now displays uniformly as green dot "Running" (运行中), completely removing redundant "Direct Connection" technical labels;
+  - Focuses user attention on security: compliant egress translates directly into safe passage.
+- **Modal Dialog Polish & Clutter Removal**:
+  - **Update Dialog**: Removed redundant raw GitHub release URLs and duplicated version badge next to release notes header, keeping only the clean status pill and update notes;
+  - **About Dialog**: Removed external GitHub link button from the modal footer, retaining only developer author credit and core protection highlights.
+- **Update Detection Pipeline Bump**:
+  - Incremented semver comparison baseline to v1.3.22, ensuring all existing installations accurately detect and notify users of new releases.
+
 ## v1.3.21 Windows & macOS Compliant Egress & Zero-Interruption Release · 2026-11-04
 
 ### Cross-Platform Features (macOS & Windows)
