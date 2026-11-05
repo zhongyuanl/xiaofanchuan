@@ -9,15 +9,15 @@
   <strong>让每一次 AI 交互，都在透明、纯净、受控的环境中扬帆起航。</strong>
 </p>
 
-[![Version](https://img.shields.io/badge/version-1.3.22-007AFF?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
-[![Platform macOS](https://img.shields.io/badge/macOS-Apple_Silicon_arm64-black?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
-[![Platform Windows](https://img.shields.io/badge/Windows-x64_Portable-0078D6?style=flat-square&logo=windows)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22)
+[![Version](https://img.shields.io/badge/version-1.3.23-007AFF?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23)
+[![Platform macOS](https://img.shields.io/badge/macOS-Apple_Silicon_arm64-black?style=flat-square&logo=apple)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23)
+[![Platform Windows](https://img.shields.io/badge/Windows-x64_Portable-0078D6?style=flat-square&logo=windows)](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23)
 [![Core Tech](https://img.shields.io/badge/built_with-Rust_%26_SwiftUI-orange?style=flat-square)](https://github.com/zhongyuanl/xiaofanchuan)
 [![Status](https://img.shields.io/badge/release-Stable-brightgreen?style=flat-square)](https://github.com/zhongyuanl/xiaofanchuan/releases)
 
 **[简体中文](README.md) | [English](README.en.md)**
 
-[**📥 立即下载 v1.3.22**](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.22) · [**📖 使用指南**](docs/使用指南.md) · [**❓ 常见问答**](docs/使用指南.md#7-常见问题) · [**⚠️ 注意事项与隐私**](docs/注意事项与隐私说明.md) · [**🐛 反馈建议**](https://github.com/zhongyuanl/xiaofanchuan/issues)
+[**📥 立即下载 v1.3.23**](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23) · [**📖 使用指南**](docs/使用指南.md) · [**❓ 常见问答**](docs/使用指南.md#7-常见问题) · [**⚠️ 注意事项与隐私**](docs/注意事项与隐私说明.md) · [**🐛 反馈建议**](https://github.com/zhongyuanl/xiaofanchuan/issues)
 
 </div>
 
@@ -77,14 +77,14 @@
 
 | 操作系统 | 下载文件 | 推荐度 | 说明 |
 | :--- | :--- | :--- | :--- |
-| **macOS** (13.0+) | [**`Little-Sailboat-v1.3.22-macOS.dmg`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-macOS.dmg) | ⭐⭐⭐⭐⭐ **首选推荐** | 双击打开 DMG，将 APP 拖入 Applications 即可 |
-| **macOS** (13.0+) | [`Little-Sailboat-v1.3.22-macOS.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-macOS.zip) | ⭐⭐⭐⭐ | 解压即用绿色包 |
-| **macOS** (13.0+) | [`Little-Sailboat-v1.3.22-app.tar.gz`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-app.tar.gz) | ⭐⭐⭐ | 完整 APP Bundle 目录归档 |
-| **Windows** (10/11) | [**`Little-Sailboat-v1.3.22-Windows-x64.exe`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-Windows-x64.exe) | ⭐⭐⭐⭐⭐ **首选推荐** | 单文件免安装，内置极速 WebView2 核心 |
-| **Windows** (10/11) | [`Little-Sailboat-v1.3.22-Windows-x64.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/Little-Sailboat-v1.3.22-Windows-x64.zip) | ⭐⭐⭐⭐ | 包含使用说明文档的绿色压缩包 |
+| **macOS** (13.0+) | [**`Little-Sailboat-v1.3.23-macOS.dmg`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/Little-Sailboat-v1.3.23-macOS.dmg) | ⭐⭐⭐⭐⭐ **首选推荐** | 双击打开 DMG，将 APP 拖入 Applications 即可 |
+| **macOS** (13.0+) | [`Little-Sailboat-v1.3.23-macOS.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/Little-Sailboat-v1.3.23-macOS.zip) | ⭐⭐⭐⭐ | 解压即用绿色包 |
+| **macOS** (13.0+) | [`Little-Sailboat-v1.3.23-app.tar.gz`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/Little-Sailboat-v1.3.23-app.tar.gz) | ⭐⭐⭐ | 完整 APP Bundle 目录归档 |
+| **Windows** (10/11) | [**`Little-Sailboat-v1.3.23-Windows-x64.exe`**](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/Little-Sailboat-v1.3.23-Windows-x64.exe) | ⭐⭐⭐⭐⭐ **首选推荐** | 单文件免安装，内置极速 WebView2 核心 |
+| **Windows** (10/11) | [`Little-Sailboat-v1.3.23-Windows-x64.zip`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/Little-Sailboat-v1.3.23-Windows-x64.zip) | ⭐⭐⭐⭐ | 包含使用说明文档的绿色压缩包 |
 
 > [!TIP]
-> **完整性校验**：所有安装包均提供官方 SHA-256 哈希清单，可在发布页下载 [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/SHA256SUMS.txt) 与 [`SHA256SUMS-Windows.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.22/SHA256SUMS-Windows.txt) 进行核验。
+> **完整性校验**：所有安装包均提供官方 SHA-256 哈希清单，可在发布页下载 [`SHA256SUMS.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/SHA256SUMS.txt) 与 [`SHA256SUMS-Windows.txt`](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v1.3.23/SHA256SUMS-Windows.txt) 进行核验。
 
 ---
 

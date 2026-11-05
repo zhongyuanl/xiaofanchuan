@@ -2,6 +2,15 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+## v1.3.23 Windows & macOS Minimalist Modal & Clutter Removal Release · 2026-11-05
+
+### Cross-Platform Polish (macOS & Windows)
+- **New Version Modal Polish**:
+  - Completely removed the redundant "v1.3.xx Latest" badge beside the "Release Notes" section header in the update dialog, eliminating visual duplication;
+  - Cleaned up dialog typography to focus on core change notes and 1-click update action.
+- **Update Detection Pipeline Bump**:
+  - Incremented semver comparison baseline to v1.3.23, ensuring all existing installations accurately detect and notify users of new releases.
+
 ## v1.3.22 Windows & macOS Status Normalization & Minimalist UI Release · 2026-11-05
 
 ### Cross-Platform Features & Enhancements (macOS & Windows)
