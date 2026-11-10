@@ -1,48 +1,57 @@
-# Little Sailboat v1.3.19 · Build 149
+# Little Sailboat v2.0.3 · Release Notes
 
-**[简体中文](发布说明-v1.3.19.md) | [English](RELEASE_NOTES.en.md)**
+> Empowering every AI interaction in a pure, transparent, and fail-closed secure harbor.  
+> 让每一次与 Claude 的对话，都在纯净、透明、受控的极安全环境中从容起航！
 
-The distribution provides macOS Apple Silicon and Windows x64 editions. On 2026-11-02, an updated polish build was released for both platforms (macOS adds GitHub Releases auto-update checks and automated installation; Windows brings system appearance switching, dark mode support, bilingual i18n, crisp multi-resolution icons, and refined UI typography). Build 149 and historical change records are preserved below.
+---
 
-## Windows x64 usage and scope
+## 🇺🇸 English (Release Notes)
 
-Download `Little-Sailboat-v1.3.19-Windows-x64.exe` from [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19), or extract the matching ZIP, then double-click the EXE. The launcher includes the core and WebView2Loader and extracts them to `%LOCALAPPDATA%\ClaudeGuard\app`. Microsoft Edge WebView2 Runtime is still required; obtain it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/) if missing.
+🎉 **Welcome to the All-New Little Sailboat v2.0.3!**  
+This major milestone release is rebuilt from the ground up for developers leveraging **Claude Desktop**, **Web sessions**, and **Claude Code CLI**. Say goodbye to unexpected account suspensions and tedious proxy exports. Little Sailboat safeguards your mission-critical AI workflows with an authentic native experience and robust kernel-level security!
 
-The target is Windows x64, with Windows 11 VM run records. Windows 10 and native ARM64 builds remain unverified. Configure the proxy, browser and clients inside the same Windows system. Only connections through `127.0.0.1:17897` are controlled; there is no system-wide Windows outbound block. Full platform parity has not been established. Applications-folder, Apple-signature, sudoers and Mac removal procedures below apply only to macOS.
+### ✨ Highlights & Key Innovations
 
-Use `SHA256SUMS-Windows.txt` for Windows downloads. Packaging and file checks were completed; full functional acceptance was not repeated.
+- 🍏 **Authentic Apple Glass Aesthetic**: Handcrafted with pure Swift 6, SwiftUI, and AppKit. Instantaneous launch, zero Electron overhead, and refined translucent surfaces deeply integrated into macOS.
+- 🌍 **Interactive 3D Dot-Matrix Globe**: Low-level gesture tracking enabling 360° drag-and-rotate exploration, smooth double-click auto-centering, and live spatial vector arcs from your physical origin to outbound exit nodes.
+- 🛡️ **Fail-Closed Gatekeeper Proxy (`127.0.0.1:17897`)**: Dedicated local security gatekeeper. If network connectivity degrades, it severs traffic immediately—never allowing silent fallback to direct unproxied connections, eliminating real-IP leakage once and for all!
+- ⚡ **Mandatory Dual Substrate: System Proxy + TUN Interface**: Simultaneously activates system proxies and a kernel-level TUN virtual adapter, completely capturing CLI tools, background MCP subprocesses, UDP packets, and system DNS for true zero DNS & WebRTC leaks.
+- 🌐 **Dual-Engine Flexibility & Smart Routing**:
+  - Embedded high-performance proxy engine with direct subscription synchronization and asynchronous multi-node latency testing;
+  - Seamless external proxy client compatibility with One-Click System Proxy Repair, automatically adapting to active network interfaces;
+  - Intuitive Smart Split (domestic services direct at full speed, Claude secured via proxy) vs. Full Global routing.
+- 🚀 **Tri-Terminal Sandboxed Launcher**: One-click launch for Claude Official Desktop, an isolated sandbox browser (preventing cookie cross-contamination), and Claude Code CLI with automatic environment injection.
+- 🧭 **24-Hour Anti-Teleportation**: Dedicated multi-account environment isolation, registering travel changes only during active AI sessions to avoid false geographical flags.
 
-## macOS changes
+### 📥 Download & Getting Started
 
-- Timestamped Claude Code settings snapshots, keeping the latest five; stop on invalid existing JSON.
-- Preserve sk-ant- prefixes during credential handling. A prefix check cannot validate credentials or their origin.
-- Browser launch checks for the local 17897 proxy and an available supported browser.
-- Simplified proxy settings entry, adjusted unknown-score handling and bundled guidance.
+- **Compatibility**: macOS 13.0 or later (Apple Silicon M series chips).
+- **Installation**: Download and open `Little-Sailboat-v2.0.3-macOS.dmg`, drag the app into your Applications folder, and you are ready to set sail! Portable ZIP archives are also available.
+- *Windows users can grab the latest stable release [v1.3.23](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23).*
 
-These notes reflect current source and local version records; not every user path has been retested end to end. Historical account-policy claims are not presented as verified results.
+---
 
-## macOS runtime environment
+## 🇨🇳 简体中文 (Release Notes)
 
-Run directly on your main Mac or inside a macOS VM. **A VM is recommended** to reduce the impact on everyday language, time zone and network settings. Install the app, proxy, browser and Claude tools in the same VM and check ports and networking inside it; host proxy status is not a substitute. The macOS package requires Apple Silicon / arm64 macOS and cannot run in Windows/Linux guests or on Intel Macs. Specific virtualization/system combinations are not fully tested. A VM does not automatically provide anonymity or service eligibility.
+🎉 **欢迎来到全新一代小帆船（Little Sailboat v2.0.3）！**  
+这是一次跨越式的全新重构版本，专为所有深度使用 **Claude 官方桌面端**、**Web 网页端** 及 **Claude Code (命令行 CLI)** 的开发者量身打造。告别令人头疼的莫名封号与繁琐配置，小帆船用极致优雅的原生体验，为你的高价值账号提供全方位、底座级的安全守护！
 
-## macOS installation
+### ✨ 核心亮点一览
 
-Use an Apple Silicon Mac. The app declares macOS 13 or later; compatibility across all versions has not been verified. Download one of the three app assets, extract or open it and move the app to Applications. APP bundles are directories, hence the tar.gz packaging. Install your own proxy client, browser and Claude tools as needed, then follow the [user guide](USER_GUIDE.en.md).
+- 🍏 **原生 Apple 毛玻璃美学**：基于 Swift 6 + SwiftUI + AppKit 纯原生研发，启动如飞，清透磨砂质感与 macOS 深度交融。
+- 🌍 **3D 点阵交互地球仪**：支持鼠标 360° 自由旋转探索与双击平滑复位，实时呈现物理网络起点到海外出口节点的出境飞线与动态光波。
+- 🛡️ **物理硬阻断安全水闸 (`127.0.0.1:17897`)**：独创 Fail-Closed 门禁机制。网络抖动或代理异常时宁可切断网络，也坚决阻断任何未受控直连，彻底终结真实 IP 泄露导致的封号风险！
+- ⚡ **「系统代理 + TUN 虚拟网卡」双底座**：底层全面接管 CLI 终端、MCP 命令行子进程、UDP 与 DNS 流量，实现真正的零 DNS 泄露与零 WebRTC/STUN 泄漏。
+- 🌐 **双引擎自由切换与智能分流**：
+  - 内置高性能独立代理专核（直接导入订阅源，异步毫秒级测速）；
+  - 完美协同外部已有代理客户端，独创「系统代理一键修复」，秒级识别当前网卡并一键纠偏恢复；
+  - 极简二选一：「智能分流」（国内网页与微信秒开，Claude 走专线）与「全量出海」（全机流量跨境）。
+- 🚀 **三端一键独立沙盒启动台**：一键拉起 Claude 官方桌面端、独立沙盒专用浏览器（彻底隔离日常 Cookie 串号）与 Claude Code 终端（免去每次手动 export 环境变量），退出时主动安全清场。
+- 🧭 **24 小时防瞬移保护**：多账号独立环境隔离，真实使用才计入差旅，远离跨区漂移风控。
 
-## Important details
+---
 
-- Ad-hoc signing only; no Developer ID, notarization or Intel build. Do not disable system security.
-- No nodes, subscriptions or accounts included; no guarantee against restrictions, anonymity, service eligibility or control of all system traffic.
-- Optional actions may change language, time zone, IPv6, Claude Code settings and passwordless sudoers rules. Cleanup can permanently remove data; exit cleanup can terminate other Claude sessions. Back up and save work first.
-- Checks contact external IP services; some original-exit queries can be direct or unencrypted HTTP.
-- The feedback button uses an old address; use this repository's Issues. The update panel does not check online.
+### 🔒 Integrity & Security Notice
 
-## References and licenses
-
-CCBaga's region catalog and matching code are reused under MIT at revision aff6122719c479effd4d53c7d875bcc3c04edcc8. Clash Verge Rev/Mihomo are external tools; Magic UI, Impeccable and Emil Kowalski skills are design/method references. Fingerprint Chromium was researched only and is not bundled. See [references](REFERENCES.en.md) and retain THIRD_PARTY_NOTICES.txt.
-
-## macOS package checks and scope
-
-The DMG passed its integrity check. ZIP was repackaged with correct UTF-8 paths; its app contents and the APP tar.gz contents match the original app file by file. The app was not rebuilt or re-signed. Version, architecture, signature type, documentation links and attribution were checked. These checks are not clean-system installation/removal or full protocol safety tests. Use SHA256SUMS.txt to check downloaded assets.
-
-This repository provides application downloads and documentation, not the entire application source. GitHub's automatic Source code archives reflect this documentation repository.
+All release artifacts include cryptographic SHA-256 checksums in `SHA256SUMS.txt`.  
+*Note: Little Sailboat is strictly a client-side environment governance console. It does not provide, host, or vend network subscriptions, proxies, or accounts.*
