@@ -6,4 +6,6 @@
 
 CCBaga 适配部分沿用其 MIT 许可，版权所有声明和完整条款见 third-party/CCBaga-LICENSE.txt。Rust 依赖按各自条款处理，见 THIRD_PARTY_NOTICES.txt 和 third-party/RUST-DEPENDENCIES.md。
 
-外部安装的 Clash、Mihomo、Edge、Chrome、Claude、Node.js 等适用其独立许可与使用条款。设计参考与源码复用的关系详见 docs/参考项目与许可.md。上述说明不能缩减上游许可证已授予的权利。
+外部安装的 Clash、Edge、Chrome、Claude、Node.js 等适用其独立许可与使用条款。设计参考与源码复用的关系详见 docs/参考项目与许可.md。上述说明不能缩减上游许可证已授予的权利。
+
+内置 Mihomo v1.19.15 以独立可执行程序随 macOS 包分发，适用 GPL-3.0，完整许可见 [Mihomo 许可](third-party/Mihomo-LICENSE.txt)，对应源码见 [v1.19.15](https://github.com/MetaCubeX/mihomo/tree/v1.19.15)。其许可适用于该独立组件。

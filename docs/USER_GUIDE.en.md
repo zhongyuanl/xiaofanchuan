@@ -1,10 +1,14 @@
-# Little Sailboat v1.3.19 — User guide
+# Little Sailboat — User guide
 
 **[简体中文](使用指南.md) | [English](USER_GUIDE.en.md)**
 
+## macOS v2.0.3 system proxy repair
+
+Connect your external VPN, then select it and save its HTTP/mixed port under Environment → Proxy Environment → External Proxy. If System Proxy Configuration is disabled, click Repair System Proxy and authorize the macOS prompt. The app identifies the active service, tests the port, applies proxy settings, reads them back and tests again. It preserves bypass domains, disables PAC/automatic discovery on that service and enables SOCKS only when tested on the same port. Follow the result if permissions, connectivity or the network connection change. Windows v1.3.23 retains its existing workflow.
+
 ## Windows x64 usage and scope
 
-Download `Little-Sailboat-v1.3.19-Windows-x64.exe` from [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.19), or extract the matching ZIP, then double-click the EXE. The launcher includes the core and WebView2Loader and extracts them to `%LOCALAPPDATA%\ClaudeGuard\app`. Microsoft Edge WebView2 Runtime is still required; obtain it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/) if missing.
+Download `Little-Sailboat-v1.3.23-Windows-x64.exe` from [Releases](https://github.com/zhongyuanl/xiaofanchuan/releases/tag/v1.3.23), or extract the matching ZIP, then double-click the EXE. The launcher includes the core and WebView2Loader and extracts them to `%LOCALAPPDATA%\ClaudeGuard\app`. Microsoft Edge WebView2 Runtime is still required; obtain it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/) if missing.
 
 The target is Windows x64, with Windows 11 VM run records. Windows 10 and native ARM64 builds remain unverified. Configure the proxy, browser and clients inside the same Windows system. Only connections through `127.0.0.1:17897` are controlled; there is no system-wide Windows outbound block. Full platform parity has not been established. Applications-folder, Apple-signature, sudoers and Mac removal procedures below apply only to macOS.
 
@@ -78,4 +82,4 @@ User data is normally under `~/Library/Application Support/ClaudeGuard/`; histor
 
 **Other sessions close when the app exits.** Current cleanup matches process names and command patterns, so it may affect Claude sessions launched elsewhere. Save work first; this is a known limitation.
 
-**Feedback or update controls are misleading.** The feedback button still points to an old repository, and the update panel shows bundled information rather than checking online. Use this repository's Issues and Releases.
+**Update checks fail?** macOS v2.0.3 queries the latest official Release in this repository. If the network request fails, compare versions on the Releases page and report issues here.

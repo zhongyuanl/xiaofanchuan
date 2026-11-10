@@ -6,4 +6,6 @@ This repository distributes Little Sailboat packages, documentation and third-pa
 
 The adapted CCBaga portion retains MIT terms and attribution in third-party/CCBaga-LICENSE.txt. Rust dependencies keep their own terms; see THIRD_PARTY_NOTICES.txt and third-party/RUST-DEPENDENCIES.md.
 
-Separately installed Clash, Mihomo, Edge, Chrome, Claude and Node.js retain their own licenses and terms. See docs/REFERENCES.en.md for the distinction between design references and source reuse. This notice does not reduce rights granted by upstream licenses.
+Separately installed Clash, Edge, Chrome, Claude and Node.js retain their own licenses and terms. See docs/REFERENCES.en.md for the distinction between design references and source reuse. This notice does not reduce rights granted by upstream licenses.
+
+The macOS package bundles Mihomo v1.19.15 as a separate executable under GPL-3.0. See its [license](third-party/Mihomo-LICENSE.txt) and [corresponding source](https://github.com/MetaCubeX/mihomo/tree/v1.19.15). Its license applies to that component.

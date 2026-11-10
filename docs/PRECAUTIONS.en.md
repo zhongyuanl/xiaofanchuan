@@ -2,9 +2,13 @@
 
 **[简体中文](注意事项与隐私说明.md) | [English](PRECAUTIONS.en.md)**
 
-This page covers v1.3.19, based on local source and package inspection. Clean-system installation/removal, all network protocols and every feature have not been fully tested end to end.
+This page covers macOS v2.0.3 and Windows v1.3.23, based on local source and package inspection. Clean-system installation/removal, all network protocols and every feature have not been fully tested end to end.
 
-Apple signing, sudoers, Mac application paths and macOS system procedures in this document apply only to macOS. Windows x64 uses WebView2 and extracts the core and loader to `%LOCALAPPDATA%\ClaudeGuard\app` on first launch; see the [Windows guide](USER_GUIDE.en.md#windows-x64-usage-and-scope). Both editions control only traffic actually passing through the local proxy.
+Apple signing, sudoers, Mac application paths and macOS system procedures in this document apply only to macOS. Windows x64 uses WebView2 and extracts the core and loader to `%LOCALAPPDATA%\ClaudeGuard\app` on first launch; see the [Windows guide](USER_GUIDE.en.md#windows-x64-usage-and-scope). Guard controls apply to traffic routed through the local gate. Built-in proxy and TUN options can also change system-wide routing.
+
+## macOS v2.0.3 system proxy repair
+
+Repair System Proxy changes HTTP/HTTPS on the active network service, configures SOCKS according to its connection test and disables PAC and automatic proxy discovery for that service. It preserves bypass domains and the original PAC URL. macOS may request administrator authorization. Connection probes use the entered proxy to access HTTPS 204 endpoints at www.gstatic.com and cp.cloudflare.com. Those services can observe the proxy exit IP. Interactive authorization, cross-Mac compatibility and complete network protection still require real-device verification.
 
 ## Eligibility and connection control
 
@@ -46,6 +50,6 @@ Logs and configuration are stored in user or system ClaudeGuard directories. Exi
 
 - arm64 only; ad-hoc signature; no Developer ID signing or Apple notarization.
 - Compatibility across every macOS 13+ version is unverified. Missing external software or historical helpers may change behavior on a clean machine.
-- The bundled feedback button points to the old `alan/ClaudeGuard` address. Use the actual distribution repository's Issues.
-- The update panel displays fixed information; it is not an online update check.
+- macOS v2.0.3 uses this repository for feedback.
+- macOS v2.0.3 queries this repository’s latest official Release. Check the Releases page if the network request fails.
 - Static inspection is not a complete security audit or production isolation acceptance test. Prefer a test environment and retain a recovery path.

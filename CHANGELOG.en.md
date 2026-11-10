@@ -2,6 +2,16 @@
 
 **[简体中文](CHANGELOG.md) | [English](CHANGELOG.en.md)**
 
+
+## v2.0.3 · macOS system proxy repair and interface update · 2026-11-10
+
+- Added Repair System Proxy for the active network service, using the saved port with settings read-back and connection tests.
+- Resolves renamed Wi-Fi, Ethernet and USB services and reports permission, port, network-change and verification failures.
+- Reads effective macOS proxy settings and opens the selected external client.
+- Updated dashboard, subscription and settings screenshots with example provider, node, account and exit data.
+- Refreshed the native interface and installation guide. This release targets macOS. Windows downloads remain at v1.3.23.
+- Verification covers compilation, regressions, simulated repair flows and read-only connection probes. Interactive writes, cross-Mac compatibility and end-to-end leak protection need real-device verification.
+
 ## v1.3.23 Windows & macOS Minimalist Modal & Clutter Removal Release · 2026-11-05
 
 ### Cross-Platform Polish (macOS & Windows)

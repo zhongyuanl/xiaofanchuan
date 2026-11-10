@@ -16,15 +16,16 @@ This page distinguishes reused source code, external tools, design guidance and 
 
 The catalog is general configuration data, not a list of service-eligible countries or permission to allow traffic. Earlier work also studied CCBaga's quick actions, environment checks and browser organization. Its full identity-management system and browser engine are not included.
 
-## 2. Clash Verge Rev / Mihomo — external tools, GPL v3
+## 2. Clash Verge Rev and Mihomo
 
-- Clash Verge Rev: https://github.com/clash-verge-rev/clash-verge-rev
-- The app's download action points to v2.2.3, an existing fixed link rather than a recommendation or verified current release. [License](https://github.com/clash-verge-rev/clash-verge-rev/blob/v2.2.3/LICENSE).
-- Mihomo: https://github.com/MetaCubeX/mihomo
-- Earlier local work referenced v1.19.15, not necessarily the user's installed version. [License](https://github.com/MetaCubeX/mihomo/blob/v1.19.15/LICENSE).
-- TUN documentation: https://wiki.metacubex.one/en/config/inbound/tun/
+macOS v2.0.3 bundles Mihomo v1.19.15 as a separate GPL-3.0 executable. Its license ships with the app and this repository. A corresponding-source archive for the same version is available with this release. Users obtain external clients under their respective licenses. Windows v1.3.23 retains its existing external-client workflow.
 
-The app uses local proxy ports and some control interfaces. Linux/Windows TUN behavior cannot be assumed on macOS. Neither the macOS nor Windows app packages bundle Clash or Mihomo binaries. Users obtain those separately under their own licenses. Bundling or modifying GPL components in the future requires a fresh assessment of source and license obligations.
+- [Mihomo](https://github.com/MetaCubeX/mihomo)
+- [v1.19.15 license](../third-party/Mihomo-LICENSE.txt)
+- [Corresponding source](https://github.com/zhongyuanl/xiaofanchuan/releases/download/v2.0.3/Mihomo-v1.19.15-source.tar.gz)
+- [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) carries its own GPL license. The current macOS download action references v2.4.7. Check the client's source for its actual version.
+
+The app communicates with proxy components through local ports and some control APIs. TUN behavior requires platform-specific verification.
 
 ## 3. Magic UI — visual and motion reference, MIT
 
