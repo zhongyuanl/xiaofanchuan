@@ -9,7 +9,8 @@
 - Resolves renamed Wi-Fi, Ethernet and USB services and reports permission, port, network-change and verification failures.
 - Dedicated safe browser termination protection with Claude Desktop whitelist, preventing accidental desktop client shutdowns.
 - Harmonized tri-terminal launcher icons: desktop client icon updated to modern fine-lined Apple display icon, matching browser and CLI.
-- Real-time mid-session external VPN detection with an instant top banner offering one-click switching.
+- External proxy real-time detection & terminology harmonization: dynamic prompt on mid-session proxy launch; terms unified to External Proxy across the app.
+- Symmetric control feedback: 1:1 text symmetry between toggle buttons (Smart Split, Full Global, Built-in Proxy, External Proxy) and Toast notifications; simplified tray routing menu.
 - Reads effective macOS proxy settings and opens the selected external client.
 - Updated dashboard, subscription and settings screenshots with example provider, node, account and exit data.
 - Refreshed the native interface and installation guide. This release targets macOS. Windows downloads remain at v1.3.23.
