@@ -7,6 +7,9 @@
 
 - Added Repair System Proxy for the active network service, using the saved port with settings read-back and connection tests.
 - Resolves renamed Wi-Fi, Ethernet and USB services and reports permission, port, network-change and verification failures.
+- Dedicated safe browser termination protection with Claude Desktop whitelist, preventing accidental desktop client shutdowns.
+- Harmonized tri-terminal launcher icons: desktop client icon updated to modern fine-lined Apple display icon, matching browser and CLI.
+- Real-time mid-session external VPN detection with an instant top banner offering one-click switching.
 - Reads effective macOS proxy settings and opens the selected external client.
 - Updated dashboard, subscription and settings screenshots with example provider, node, account and exit data.
 - Refreshed the native interface and installation guide. This release targets macOS. Windows downloads remain at v1.3.23.
