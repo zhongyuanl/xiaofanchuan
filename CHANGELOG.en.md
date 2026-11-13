@@ -11,6 +11,8 @@
 - Harmonized tri-terminal launcher icons: desktop client icon updated to modern fine-lined Apple display icon, matching browser and CLI.
 - External proxy real-time detection & terminology harmonization: dynamic prompt on mid-session proxy launch; terms unified to External Proxy across the app.
 - Symmetric control feedback: 1:1 text symmetry between toggle buttons (Smart Split, Full Global, Built-in Proxy, External Proxy) and Toast notifications; simplified tray routing menu.
+- Cross-Subscription Auto-Rotation for Residential Nodes: Automatically traverses subsequent subscriptions to locate compliant residential ISP nodes when the current subscription contains only Data Center IPs, seamlessly promoting the target subscription with dynamic non-compliant node blacklisting and cooling safeguards against notification spam.
+- Faithful Node Details & Multiplier Display: Fully eliminated rigid regex heuristics. Preserves exact node labels and non-standard multipliers (e.g., X30, X3) without hardcoded fallback or distortion.
 - Reads effective macOS proxy settings and opens the selected external client.
 - Updated dashboard, subscription and settings screenshots with example provider, node, account and exit data.
 - Refreshed the native interface and installation guide. This release targets macOS. Windows downloads remain at v1.3.23.
